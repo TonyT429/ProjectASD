@@ -1,0 +1,83 @@
+/*
+Title:  style.css  
+Author:   Anthony Torrez
+Date:  July 17, 2012
+CSS styles for my MIU 1207 Project
+*/
+ 
+
+label.error {
+	display:block; 
+	margin:15px 0; 
+	color:turquoise;
+	font-size: 18px;
+	font-style: bold;
+}
+
+#rberrorslink {
+	display:none;
+}
+
+body {
+	overflow: scroll;
+}
+
+#cta {
+	position:fixed; 
+	top:-50%; 
+	left:-50%; 
+	width:200%; 
+	height:200%;
+}
+
+#cta img {
+	position:absolute; 
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0; 
+	margin:auto; 
+	min-width:50%;
+	min-height:50%;
+}
+
+
+
+fieldset {
+	border: 3px solid red;
+}
+
+p {
+	margin: 20 px;
+	color: white;
+	font-size: 14px;
+	text-align: align left;
+	text-indent: 20 px;
+	font: verdana, tehoma, geneva ;
+}
+
+// Seems to be an issue with the RSS Feed overriding my colors.
+
+a {
+	color: yellow;
+	font-style: arial unicode ms;
+	font-size: 18px;
+}
+a:active {
+	color: yellow;
+	font-style:arial, normal;
+	font-size: 18px;
+}
+
+
+li {
+	color: white;
+}
+
+input {
+	color: blue;
+}
+
+label {
+	position: right;
+}
