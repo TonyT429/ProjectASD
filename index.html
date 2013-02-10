@@ -6,7 +6,7 @@
 
 	<meta charset="utf-8"/>
 	
-	<title>ASD </title>
+	<title>ProjectASD </title>
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="HandheldFriendly" content="True"/>
@@ -40,7 +40,7 @@
 
 			<img src="images/CTA.png" alt="Logo" height="200" width="290" />
 			<selection data-role='fieldcontain'>
-				<a href="#addItem" data-role="button"  data-mini="true" data-theme="a" data-icon="arrow-r" data-iconpos="right" data-ajax="false">Add a Book Now</a> 
+				<a href="#addBook" data-role="button"  data-mini="true" data-theme="a" data-icon="arrow-r" data-iconpos="right" data-ajax="false">Add a Book Now</a> 
 				<a href="#XML" data-role="button"  data-mini="true" data-theme="a" data-icon="arrow-r" data-iconpos="right" data-ajax="false">XML Data Serialization</a>
 				<a href="#JSON" data-role="button"  data-mini="true" data-theme="a" data-icon="arrow-r" data-iconpos="right" data-ajax="false">JSON Data Serialization</a>
 			</selection> 
@@ -80,18 +80,8 @@
 			          <a href="#" id="clearLocal" data-inline="true" data-role="button" data-mini="true" data-icon="alert" data-iconpos="right" data-theme="c" data-ajax="false">Clear</a>		
 				</block_b>
 			</grid_a> 
-			<form action="#" id="recordbooksform" > 
-	<!-- Input Title -->
-				<title>
-					<label for="title">Book Title:</label>
-					<input type="text" placeholder="Please Enter the Book Title" data-mini="true" name="title" id="title" class="required" />
-				</title>
-	<!-- Input Author-->
-				<author>
-					<label for="author">Author's Name:</label>
-					<input type="text" placeholder="Please Enter the Author's name" data-mini="true" name="author" id="author" class="required" />
-				</author>
-	<!-- Select Category Option -->
+			<form action="#" id="recordbook" > 
+	<!-- Select a Category -->
 				<cat data-role="fieldcontain">
 					<label for="category">Category:</label> 
 					<select name="category" id="category" data-theme="a"  data-mini="true" data-native-menu="false" class="required">
@@ -126,7 +116,17 @@
 						</optgroup>
 					</select>
 				</cat>
-	<!-- Radio buttons -->
+	<!-- Input Title -->
+				<title>
+					<label for="title">Book Title:</label>
+					<input type="text" placeholder="Please Enter the Book Title" data-mini="true" name="title" id="title" class="required" />
+				</title>
+	<!-- Input Author-->
+				<author>
+					<label for="author">Author's Name:</label>
+					<input type="text" placeholder="Please Enter the Author's name" data-mini="true" name="author" id="author" class="required" />
+				</author>
+	<!-- Series - Radio buttons -->
 				<radio>
 					<fieldset data-role="controlgroup" data-type="horizontal"  data-mini="true" class="required" >
 						<legend>Part of a Series:</legend>
@@ -137,7 +137,7 @@
 						<p>  Please select either No or Yes"</p>
 					</fieldset>
 				</radio>
-	<!-- Input Book Series-->
+	<!-- Input  Series Name-->
 				<sname>
 					<label for="seriesname">Series Name:</label>
 					<input type="text" placeholder="Please enter Series name if applicable" data-mini="true" name="seriesname" id="seriesname"  />
@@ -158,7 +158,6 @@
 					<label for="comments">Reader Comments:</label>
 					<textarea class="required" placeholder="Please enter your opinion of this book" id="comments"></textarea>
 				</comments><br />
-
 	<!-- Reset and Submit buttons -->
 				<grid class="ui-grid-a">
 					<block class="ui-block-a">
