@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="item1">
+        	<title>The Best From The Bottle</title>
+        	<author>Mark Schneider</author>
+        	<isbn>0-8256-3157-2</isbn>
+        	<genre>Cookbooks, Food and Wine</genre>
+        	<comments>Intoxicating</comments>
+        	<rate>10</rate>
+        	<series>No</series>
+        	<seriesName>""</seriesName>
+        	<seriesNum>""</seriesNum>
+        	<date>1983-05-20</date>
+    </item>
+    	<item id="item2" >
+        	<title>The 8-Week Cholesterol Cure</title>
+        	<author>Robert E. Kowalski</author>
+        	<isbn>0-06-015613-9</isbn>
+        	<genre>Medical</genre>
+        	<comments>It works!  Surprised the hell out of my doctor!</comments>
+        	<rate>8</rate>
+        	<series>No</series>
+        	<seriesName>""</seriesName>
+        	<seriesNum>""</seriesNum>
+        	<date>1988-07-22</date>
+    </item>
+    	<item id="item3">
+        	<title>Awaken The Giant Within</title>
+        	<author>Anthony Robbins</author>
+        	<isbn>0-671-79154-0</isbn>
+        	<genre>Self Help</genre>
+        	<comments>Cool</comments>
+        	<rate>7</rate>
+        	<series>No</series>
+        	<seriesName>""</seriesName>
+        	<seriesNum>""</seriesNum>
+        	<date>2001-09-13</date>
+    </item>
+    	<item id="item4">
+        	<title>Get Control of Your Blood Sugar</title>
+        	<author>Gary Scheiner, M.S., C.D.E.</author>
+        	<isbn>978-1-4127-4626-7</isbn>
+        	<genre>Medical</genre>
+        	<comments>Nice</comments>
+        	<rate>8</rate>
+        	<series>No</series>
+        	<seriesName>""</seriesName>
+        	<seriesNum>""</seriesNum>
+        	<date>2009-02-02</date>
+    </item>
+    	<item id="item5">
+        	<title>The 30 Day Diabetes Cure</title>
+        	<author>Dr. Stefan Ripich ND, CNP</author>
+        	<isbn>978-0-9844907-1-4</isbn>
+        	<genre>Medical</genre>
+        	<comments>Good</comments>
+        	<rate>7</rate>
+        	<series>No</series>
+        	<seriesName>""</seriesName>
+        	<seriesNum>""</seriesNum>
+        	<date>2009-05-25</date>
+    </item>
+    	<item id="item6">
+		<genre>Religion and Spirituality</genre>
+        	<title>New Testament</title><genre>Medical</genre>
+        	<author>Most Rev. Donald E. Pilarczyk</author>
+        	<isbn>158516165-9</isbn>
+        	<genre>Medical</genre>
+        	<comments>Rev. Pilarczyk was the one who did the English translation</comments>
+        	<rate>10</rate>
+        	<series>No</series>
+        	<seriesName>""</seriesName>
+        	<seriesNum>""</seriesNum>
+        	<date>09-10-2011</date>
+    </item>
+    	<item id="item7">
+        	<title>Low Cost Natural Cures for Your Dog and Cat</title>
+        	<author>Dr. John Heinerman</author>
+        	<isbn>1-882330-91-9</isbn>
+        	<genre>Medical</genre>
+        	<comments>Helpful</comments>
+        	<rate>8</rate>
+        	<series>No</series>
+        	<seriesName>""</seriesName>
+        	<seriesNum>""</seriesNum>
+        	<date>2008-10-13</date>
+    </item>
+    	<item id="item8">
+        	<title>Kitty and the Silver Bullet</title>
+        	<author>Carrie Vaughn</author>
+        	<isbn>978-0-446-61875-5</isbn>
+        	<genre>Sci Fi and Fantasy</genre>
+        	<comments>Excellent Story</comments>
+        	<rate>8</rate>
+        	<series>Yes</series>
+        	<seriesName>A Werewolf Named Kitty</seriesName>
+        	<seriesNum>4</seriesNum>
+        	<date>2008-08-08</date>
+    </item>
+    	<item id="item9">
+        	<title>Kitty and the Midnight Hour</title>
+        	<author>Carrie Vaughn</author>
+        	<isbn>0-446-61641-9</isbn>
+        	<genre>Sci Fi and Fantasy</genre>
+        	<comments>Excellent</comments>
+        	<rate>9</rate>
+        	<series>Yes</series>
+        	<seriesName>A Werewolf Named Kitty</seriesName>
+        	<seriesNum>1</seriesNum>
+        	<date>7-4-2011</date>
+    </item>
+</items>
+
+
