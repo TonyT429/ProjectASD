@@ -4,6 +4,31 @@
 $('#home').on('pageinit', function() {
 });
 
+// Gets the value of the selected Radio button
+var radioSelect = function() {
+	return $('input:radio[name=series]:checked').val();
+};
+
+var stored = function(key) {
+	if (!key) {
+		var id = Math.floor(Math.random() * 10000000001);
+		id = key;
+		button = radioSelect();  //call in the value of the radio button
+		var item = {};
+			item.category = ["Category:", $('#category').val()];
+			item.title = ["Book Title:", $('#title').val()];
+			item.author = ["Author:", $('#author').val()];
+			item.series = ["Part of a Series:" , button];
+			item.seriesname = ["Name of Series:", $('#seriesname').val()];
+			item.seriesnumber = ["Number in Series:", $('#seriesnumber').val()];
+			item.rate = ["Rate the Book:", $('#rate').val()];
+			item.comments = ["Comments:", $('#comments').val()];
+			console.log(item);
+			localStorage.setItem(id, JSON.stringify(item));
+	}
+	return false;
+};
+
 $('#addBook').on('pageinit', function() {
 	var bookform = $('#recordbook'),
 		errorlink = $('errorlink');
@@ -23,7 +48,7 @@ $('#addBook').on('pageinit', function() {
 		submitHandler: function() {
 			var data = bookform.serializeArray();
 			localStorage.setItem('bookform', data);
-			storeData(data);
+			stored(data);
 		}
 	});
 });
@@ -83,30 +108,6 @@ $('#getBooklist').on('click', getBooklist);  // Check to see if there is data in
 		$('#editLink').on('click', editLink);
 	}
 	
-// Gets the value of the selected Radio button
-var radioSelect = function() {
-	return $('input:radio[name=series]:checked').val();
-};
-
-var stored = function(key) {
-	if (:key) {
-		id = key;
-		button = radioSelect();  //call in the value of the radio button
-		var item = ();
-			item.category = ["Category:", $('#category').val()];
-			item.title = ["Book Title:", $('#title').val()];
-			item.author = ["Author:", $('#author').val()];
-			item.series = ["Part of a Series:" , button];
-			item.seriesname = ["Name of Series:", $('#seriesname').val()];
-			item.seriesnumber = ["Number in Series:", $('#seriesnumber').val()];
-			item.rate = ["Rate the Book:", $('#rate').val()];
-			item.comments = ["Comments:", $('#comments').val()];
-			console.log(item);
-			localStorage.setItem(id, JSON.stringify(item));
-	}
-	return false;
-};
-
 
 var deleteItem = function() {
 	var verify = confirm('Delete this Book?');
