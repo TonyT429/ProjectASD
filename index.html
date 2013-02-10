@@ -45,7 +45,7 @@
 				<a href="#JSON" data-role="button"  data-mini="true" data-theme="a" data-icon="arrow-r" data-iconpos="right" data-ajax="false">JSON Data Serialization</a>
 			</selection> 
 			<library>
-				<ul id="theShelf" data-role="listview"></ul>
+				<ul id="bookshelf" data-role="listview"></ul>
 			</library>
 		</section><!--Closes the Home Page Content-->
 		
@@ -59,7 +59,130 @@
 			</nav>  
 		</footer>   <!-- Closes the Home Page Footer -->
 	</home>
-<!--Close Home-->
+
+<!-- addBook page -->
+	<newBook data-role="page" id="addBook">
+		<topbar data-role="header"  data-position="fixed">
+			<branding>
+				<a href="#home" alt="home" data-inline="true" data-ajax="false">
+					<img src="images/BookTrackerLogo.png" height="60" width="160" data-inline="true" />
+				</a>	
+				<label>Record Books</label>
+			</branding>
+		</topbar>
+		
+		<section data-role="content">	
+			<grid_a class="ui-grid-a">
+				<block_a class="ui-block-a">
+					<a href="#display" id="display" data-inline="true" data-role="button" data-mini="true" data-icon="info" data-iconpos="right" data-theme="b" data-ajax="false">Display</a>
+				</block_a><!-- Close block-A-->
+				<block_b class="ui-block-b">
+			          <a href="#" id="clearLocal" data-inline="true" data-role="button" data-mini="true" data-icon="alert" data-iconpos="right" data-theme="c" data-ajax="false">Clear</a>		
+				</block_b>
+			</grid_a> 
+			<form action="#" id="recordbooksform" > 
+	<!-- Input Title -->
+				<title>
+					<label for="title">Book Title:</label>
+					<input type="text" placeholder="Please Enter the Book Title" data-mini="true" name="title" id="title" class="required" />
+				</title>
+	<!-- Input Author-->
+				<author>
+					<label for="author">Author's Name:</label>
+					<input type="text" placeholder="Please Enter the Author's name" data-mini="true" name="author" id="author" class="required" />
+				</author>
+	<!-- Select Category Option -->
+				<cat data-role="fieldcontain">
+					<label for="category">Category:</label> 
+					<select name="category" id="category" data-theme="a"  data-mini="true" data-native-menu="false" class="required">
+					<option data-placeholder="true">Select a Genre</option>
+						<optgroup label="Fiction">
+							<option value="child_book" >Children's Books</option>
+							<option value="horror" >Horror</option>
+							<option value="humor">Humor</option>
+							<option value="manga">Manga & Graphic Novels</option>
+							<option value="romance">Romance</option>
+							<option value="sci_fan">Sci Fi & Fantasy</option>
+							<option value="west">Western</option>
+						</optgroup>
+						<optgroup label="Non-Fiction">
+							<option value="art_photo">Art & Photography</option>
+							<option value="compu_tech">Computers & Technology</option>
+							<option value="food_wine">Cookbooks, Food & Wine</option>
+							<option value="craft_home">Crafts, Hobbies & Home</option>
+							<option value="edu_ref">Education & Reference</option>
+							<option value="health">Health, Fitness & Dieting</option>
+							<option value="history">History</option>
+							<option value="law">Law</option>
+							<option value="math_sci">Math & Science</option>
+							<option value="medical">Medical</option>
+							<option value="crime_thrill">Mystery, Thriller & Suspense</option>
+							<option value="parent_rel">Parenting & Relationships</option>
+							<option value="relig_spirit">Religion & Spirituality</option>
+							<option value="self_help">Self Help</option>
+							<option value="sports_out">Sports & Outdoors</option>
+							<option value="teens">Teens</option>
+							<option value="travel">Travel</option>
+						</optgroup>
+					</select>
+				</cat>
+	<!-- Radio buttons -->
+				<radio>
+					<fieldset data-role="controlgroup" data-type="horizontal"  data-mini="true" class="required" >
+						<legend>Part of a Series:</legend>
+						<input type="radio" value="no" name="series" id="series-1" checked="checked" class="required"/>
+						<label for="series-1">No</label>
+						<input type="radio" value="yes" name="series" id="series-2" />
+						<label for="series-2">Yes</label>
+						<p>  Please select either No or Yes"</p>
+					</fieldset>
+				</radio>
+	<!-- Input Book Series-->
+				<sname>
+					<label for="seriesname">Series Name:</label>
+					<input type="text" placeholder="Please enter Series name if applicable" data-mini="true" name="seriesname" id="seriesname"  />
+				</sname>
+	<!-- Input Number in Series  -->
+				<snumber>
+					<label for="seriesnum">Number in Series:</label>
+					<input type="text" placeholder="Please Enter the Book Number in the Series - digits only" data-mini="true" name="seriesnum" id="seriesnum" class="digits" />
+				</snumber>
+	<!-- Rate book range slider -->
+				<rate>
+					<label for="rate">Rate This Book:</label>
+					<input type="range" data-theme="a" data-mini="true" name="rate" id="rate" value="5" min="0" max="10" />
+					<br/><p>On a Scale of 1 to 10, did you like the book?</p>
+				</rate>
+	<!-- Input Comments -->
+				<comments class="required">
+					<label for="comments">Reader Comments:</label>
+					<textarea class="required" placeholder="Please enter your opinion of this book" id="comments"></textarea>
+				</comments><br />
+
+	<!-- Reset and Submit buttons -->
+				<grid class="ui-grid-a">
+					<block class="ui-block-a">
+						<input type="submit"  data-inline="true" id="submit" data-mini="true" value="Submit" data-theme="b"/>
+					</block>
+					<block class="ui-block-b">
+						<input type="reset" data-inline="true" id="reset" data-icon="alert" data-mini="true" value="Reset" data-theme="c" />
+					</block>
+				</grid>
+			</form>
+		</section>
+
+		<footer data-role="footer" data-position="fixed" data-id="home">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#search" data-role="button" data-mini="true" data-iconpos="right"  value="search" class="search" data-ajax="false">Search</a></li>
+					<li><a href="#browse" data-role="button" data-mini="true" data-iconpos="right"  value="browse" class="browse" data-ajax="false">Browse</a></li>
+					<li><a href="#newsfeed" data-role="button" data-mini="true" data-iconpos="right"  data-ajax="false">RSS Feed</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</newBook>
+
+
 	
 	
 		<!-- JavaScript under here -->
