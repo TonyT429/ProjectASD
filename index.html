@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
      <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
-	<link rel="stylesheet" href="css/themes/myNewTheme.min.css" />
+<!--	<link rel="stylesheet" href="css/themes/myNewTheme.min.css" />  -->
 	<link rel="stylesheet" href="css/styles.css" /> 
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -85,42 +85,40 @@
 				<cat data-role="fieldcontain">
 					<label for="category">Category:</label> 
 					<select name="category" id="category" data-theme="a"  data-mini="true" data-native-menu="false" class="required">
-					<option data-placeholder="true">Select a Genre</option>
-						<optgroup label="Fiction">
-							<option value="child_book" >Children's Books</option>
-							<option value="horror" >Horror</option>
-							<option value="humor">Humor</option>
-							<option value="manga">Manga & Graphic Novels</option>
-							<option value="romance">Romance</option>
-							<option value="sci_fan">Sci Fi & Fantasy</option>
-							<option value="west">Western</option>
-						</optgroup>
-						<optgroup label="Non-Fiction">
+<!--					<option data-placeholder="true">Select Category</option>  -->
+						<optgroup label="Select a Category">
 							<option value="art_photo">Art & Photography</option>
+							<option value="child_book" >Children's Books</option>
 							<option value="compu_tech">Computers & Technology</option>
-							<option value="food_wine">Cookbooks, Food & Wine</option>
 							<option value="craft_home">Crafts, Hobbies & Home</option>
+							<option value="crime_thrill">Mystery, Thriller & Suspense</option>
 							<option value="edu_ref">Education & Reference</option>
+							<option value="food_wine">Cookbooks, Food & Wine</option>
 							<option value="health">Health, Fitness & Dieting</option>
 							<option value="history">History</option>
+							<option value="horror" >Horror</option>
+							<option value="humor">Humor</option>
 							<option value="law">Law</option>
+							<option value="manga">Manga & Graphic Novels</option>
 							<option value="math_sci">Math & Science</option>
 							<option value="medical">Medical</option>
-							<option value="crime_thrill">Mystery, Thriller & Suspense</option>
 							<option value="parent_rel">Parenting & Relationships</option>
 							<option value="relig_spirit">Religion & Spirituality</option>
+							<option value="romance">Romance</option>
+							<option value="sci_fan">Sci Fi & Fantasy</option>
 							<option value="self_help">Self Help</option>
 							<option value="sports_out">Sports & Outdoors</option>
 							<option value="teens">Teens</option>
 							<option value="travel">Travel</option>
+							<option value="west">Western</option>
 						</optgroup>
 					</select>
 				</cat>
 	<!-- Input Title -->
-				<title>
+				<btitle>
 					<label for="title">Book Title:</label>
 					<input type="text" placeholder="Please Enter the Book Title" data-mini="true" name="title" id="title" class="required" />
-				</title>
+				</btitle>
 	<!-- Input Author-->
 				<author>
 					<label for="author">Author's Name:</label>
@@ -180,6 +178,19 @@
 			</nav>
 		</footer>
 	</newBook>
+
+<!-- RecordBooksErrors -->
+	<berror data-role="dialog" id="recordbookserrors" >
+		<missing data-role="header" data-position="fixed">
+			<h1>Fields Missing</h1>
+		</missing>
+		
+		<section data-role="content">
+			<ul>
+				<li>Test</li>
+			</ul>
+		</section>
+	</berror>
 
 
 	
